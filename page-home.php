@@ -10,23 +10,10 @@
 
         <div class="middle-container section-content">
             <div class="container">
-                <ul class="row">
-                    <li class="col-xs-4 box portfolio-entry1">
-                        <div class="intro-content align-center">
-                            <h1 class="special-intro">Piece Within</h1>
-                        </div> <!-- end intro-content -->
-                    </li>
-                    <li class="col-xs-4 box portfolio-entry2">
-                        <div class="intro-content align-center">
-                            <h1 class="intro-color-1">We create really awesome stuff</h1>
-                        </div> <!-- end intro-content -->
-                    </li>
-                    <li class="col-xs-4 box portfolio-entry3">
-                        <div class="intro-content align-center">
-                            <h1 class="intro-color-2">We're available for custom work</h1>
-                        </div> <!-- end intro-content -->
-                    </li>
-                </ul>
+                <?php if (have_posts()) : while (have_posts()) :  the_post();?>
+                    <div class="col-md-6"><?php the_field('left_content') ?></div>
+                <div class="col-md-6"><?php the_content(); ?></div>
+                <?php endwhile; endif; ?>
 
                 <?php
                     $args = array(

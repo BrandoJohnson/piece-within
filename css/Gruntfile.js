@@ -18,7 +18,8 @@ module.exports = function(grunt) {
                 files: ['less/variables.less', 'less/bootstrap.less', 'less/utility.less', 'less/typography.less', 'less/ui.less', 'less/layout.less' ], // which files to watch
                 tasks: ['less'],
                 options: {
-                    nospawn: true
+                    nospawn: true,
+                    livereload: true
                 }
             }
         }
