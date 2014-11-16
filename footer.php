@@ -18,11 +18,10 @@
             <li><a href="" class="icon-facebook"></a></li>
             <li><a href="" class="icon-twitter"></a></li>
         </ul>
-
         <hr class="footerhr"/>
 
         <p>&copy; Copyright <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?>. Portfolio theme by Brandon Johnson.</p>
-        <img class="trees" src="wp-content/themes/glass/images/trees.png" alt="trees"/>
+        <img class="trees" src="<?php print IMAGES; ?>/trees.png" alt="trees"/>
     </footer>
 
     <?php wp_footer(); ?>
