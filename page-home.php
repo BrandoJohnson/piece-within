@@ -8,40 +8,103 @@
     <section>
         <hr class="no-margin"/>
 
-        <div class="middle-container section-content">
-            <div class="container">
-                <?php if (have_posts()) : while (have_posts()) :  the_post();?>
-                    <div class="col-md-6"><?php the_field('left_content') ?></div>
-                <div class="col-md-6"><?php the_content(); ?></div>
-                <?php endwhile; endif; ?>
-
-                <?php
-                    $args = array(
-                      'post_per_page' => 6
-                    );
-
-                    $portfolio_items = new WP_Query($args);
-
-                    if ($portfolio_items->have_posts()) : ?>
-                <ul class="row portfolio-entries">
-                    <?php while ($portfolio_items->have_posts()) : $portfolio_items->the_post(); ?>
-                    <li class="col-xs-4 box portfolio-entry">
-                        <div class="hover-state align-right">
-                            <p><?php the_title(); ?></p>
-                            <em>Click to See Project</em>
-                        </div> <!-- end hover state -->
-
-                        <?php if (has_post_thumbnail()) : ?>
-                            <figure>
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                            </figure>
-                        <?php endif; ?>
+        <div class="middle-container2 section-content">
+            <div class="row">
+            <div class="col-xs-6">
+            <div class="titre">
+                <h4 class="phrase">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <h1 class="no-margin">Piece Within</h1>
+                        <?php the_content(); ?>
+                    <?php endwhile; else : ?>
+                        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
+                </h4>
+            </div>
+            </div>
+            <div class="col-xs-6">
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="<?php print IMAGES; ?>/slider/rig.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-6" class="prev">&#x2039;</label>
+                            <label for="img-2" class="next">&#x203a;</label>
+                        </div>
                     </li>
-                   <?php endwhile; ?>
+
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="<?php print IMAGES; ?>/slider/rig2.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-1" class="prev">&#x2039;</label>
+                            <label for="img-3" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="<?php print IMAGES; ?>/slider/rig3.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-2" class="prev">&#x2039;</label>
+                            <label for="img-4" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-3" class="prev">&#x2039;</label>
+                            <label for="img-5" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-5" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-4" class="prev">&#x2039;</label>
+                            <label for="img-6" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-6" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-5" class="prev">&#x2039;</label>
+                            <label for="img-1" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <li class="nav-dots">
+                        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                    </li>
                 </ul>
-                <?php endif; ?>
+            </div>
+</div>
+            <div class="container">
                 <div class="cta align-center">
-                    <a href="portfolio.html" class="btn btn-primary">See My Full Portfolio</a>
+                    <a href="portfolio" class="btn btn-primary">See My Full Portfolio</a>
+                    <a href="shop" class="btn btn-primary">View Our Store</a>
                 </div> <!-- end cta -->
             </div> <!-- end container -->
         </div> <!-- end middle container -->

@@ -27,7 +27,6 @@
 <!-- HEADER -->
 <header class="main-header align-center section-content">
     <a href="<?php home_url(); ?>"  class="logo"><img src="<?php print IMAGES; ?>/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
-
     <nav class="main-nav">
         <?php
             wp_nav_menu(array(

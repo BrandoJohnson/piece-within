@@ -58,6 +58,19 @@ hr.footerhr{
   }
 }
 
+.box2 {
+  background-color: white;
+  border: 1px solid @border;
+  padding: 3px;
+
+  .drop-shadow();
+
+  figure img {
+    display: block;
+    width: 100%;
+  }
+}
+
 .btn {
   background-color: @light-bg;
   color: @regular-text;
@@ -99,6 +112,7 @@ hr.footerhr{
   .inner-shadow(0, -3px, 0, 0, .2);
 
   padding: 10px 24px;
+  margin: 2em;
   text-transform: uppercase;
 
   &:hover {
@@ -186,4 +200,8 @@ blockquote {
     -webkit-font-smoothing: antialiased;
   }
 
+}
+
+.wootemp {
+  margin: 2em;
 }

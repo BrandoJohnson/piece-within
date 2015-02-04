@@ -10,7 +10,7 @@
 
         <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
 
-        <div class="middle-container section-content">
+        <div class="middle-container2 section-content">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8">

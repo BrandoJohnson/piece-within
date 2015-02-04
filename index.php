@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <!-- PORTFOLIO AREA -->
-    <section>
+    <section >
         <hr class="no-margin"/>
 
         <?php
@@ -13,7 +13,7 @@
             ));
         ?>
 
-        <div class="middle-container section-content">
+        <div class="middle-container2 section-content">
             <div class="container">
                 <div class="row portfolio-entries">
                 <?php if (have_posts()) :  ?>
@@ -34,7 +34,7 @@
                         $classes = join(' ', $class_names);
                     }
                     ?>
-                    <li class="col-xs-4 box portfolio-entry <?php echo $classes ?>">
+                    <li class="col-xs-4 box2 portfolio-entry <?php echo $classes ?>">
                         <div class="hover-state align-right">
                             <p><?php the_title(); ?></p>
                             <em>Click to See Project</em>
