@@ -11,14 +11,16 @@
         <div class="middle-container2 section-content">
             <div class="row">
             <div class="col-xs-6">
-            <div class="titre">
+            <div class="box">
                 <h4 class="phrase">
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <h1 class="no-margin">Piece Within</h1>
+                        <div class="no-margin2"><h1 >Welcome to Piece Within!</h1>
                         <?php the_content(); ?>
+                        </div>
                     <?php endwhile; else : ?>
                         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                    <?php endif; ?>
+
+           <?php endif; ?>
                 </h4>
             </div>
             </div>
@@ -101,9 +103,9 @@
                 </ul>
             </div>
 </div>
-            <div class="container">
-                <div class="cta align-center">
-                    <a href="portfolio" class="btn btn-primary">See My Full Portfolio</a>
+            <div class="container boxxy row">
+                <div class="cta align-center box col-xs-12">
+                    <a href="portfolio" class="btn btn-primary">See Full Portfolio</a>
                     <a href="shop" class="btn btn-primary">View Our Store</a>
                 </div> <!-- end cta -->
             </div> <!-- end container -->

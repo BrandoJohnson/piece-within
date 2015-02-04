@@ -2,7 +2,7 @@
 <section>
     <div class="quote-container section-content align-center">
         <h3>Need a quote?</h3>
-        <p>Please use the contact page to get ahold of us. Please include some personal information and your project description and budget.</p>
+        <p>We do custom work! Please use the <a href="contact">contact page</a> to get ahold of us. Include some personal information and your project description and budget.</p>
         <p><a href="<?php echo home_url(); ?>/contact">Get a free quote &rarr;</a></p>
     </div>
 </section>
@@ -10,8 +10,8 @@
 <section>
     <!-- FOOTER -->
     <footer class="main-footer section-content align-center" id="contact-info">
-        <h3>Just wana say Hi?</h3>
-        <p>You can call me, email me, or connect with me through my social networks.</p>
+        <h3>Questions or Comments?</h3>
+        <p>You can reach us by phone, email or connect with us through our social networks.</p>
         <p>242.123.4567 </br> <a href="#">hello@metta.com</a></p>
 
         <ul class="social-icons inline">
@@ -20,7 +20,8 @@
         </ul>
         <hr class="footerhr"/>
 
-        <p>&copy; Copyright <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?>. Portfolio theme by Brandon Johnson.</p>
+        <p>&copy; Copyright <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?><br/>
+            Portfolio theme by Brandon Johnson.</p>
         <img class="trees" src="<?php print IMAGES; ?>/trees.png" alt="trees"/>
     </footer>
 

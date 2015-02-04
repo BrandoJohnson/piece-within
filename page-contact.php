@@ -8,7 +8,7 @@
     <section>
         <hr class="no-margin"/>
 
-        <div class="middle-container section-content">
+        <div class="middle-container3 section-content">
             <div class="container box section-content align-left">
                 <?php if (have_posts()) : while (have_posts()) : the_post();?>
                     <?php the_content(); ?>

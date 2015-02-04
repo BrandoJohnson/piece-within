@@ -56,15 +56,14 @@
                         if ($portfolio_description != '') {
                             echo "<p>$portfolio_description</p>";
                         }
-                        if ($portfolio_link != '') {
-                            echo '<p><a href="'.$portfolio_link.'">'.$portfolio_link.'</a></p>';
-                        } ?>
+
+                        ?>
 
                         <hr class="alt" />
 
                         <?php if ($portfolio_quote != '') : ?>
-                        <p>Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. </p>
-                        <p><a href="#">Visit Site &rarr;</a></p>
+                        <p>Products like this along with all of our other products are available for sale over on our Shop page. </p>
+                        <p><a href="shop">Visit Shop &rarr;</a></p>
 
                         <hr class="alt" />
 

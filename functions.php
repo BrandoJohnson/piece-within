@@ -73,7 +73,7 @@ function custom_display_meta_box($post) {
         <textarea class="widefat" name="portfolio_description" id="portfolio_description" cols="30" rows="10"><?php echo $portfolio_description; ?></textarea>
     </p>
     <p>
-        <label for="portfolio_link">Link:</label><br />
+        <label for="portfolio_link">Shop Link? (If no product in shop, leave blank)</label><br />
         <input type="text" name="portfolio_link" id="portfolio_link" value="<?php echo $portfolio_link; ?>" />
     </p>
     <p>
